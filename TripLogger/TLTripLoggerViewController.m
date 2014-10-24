@@ -83,7 +83,7 @@ static NSString *const TripTableViewCellID = @"TripTableViewCell";
     {
         NSInteger tripLengthInSeconds = (NSInteger)[tripInfo.endTime timeIntervalSinceDate:tripInfo.startTime];
         cell.tripTimeLabel.text = [NSString stringWithFormat:@"%@-%@ (%dmin)",[tripInfo.startTime tripTimeAsString],
-                                   [tripInfo.endTime tripTimeAsString], 1 + tripLengthInSeconds/60];
+                                   [tripInfo.endTime tripTimeAsString], (int)(1 + tripLengthInSeconds/60)];
     }
     else
         cell.tripTimeLabel.text = [tripInfo.startTime tripTimeAsString];
@@ -112,6 +112,8 @@ static NSString *const TripTableViewCellID = @"TripTableViewCell";
     [headerView addSubview:logSwitch];
     [logSwitch addTarget:self action:@selector(setLogState:) forControlEvents:UIControlEventValueChanged];
     [logSwitch setOn:[self.dataSource tripLoggerViewControllerIsLogStatusOn:self]];
+    [logSwitch setOnTintColor:
+     [UIColor colorWithRed:24.0/255.0 green:164.0/255.0 blue:170.0/255.0 alpha:1.0]];
     
     NSDictionary *viewsDictionary = @{@"nameLabel": tripLoginLabel, @"logSwitch":logSwitch};
     tripLoginLabel.translatesAutoresizingMaskIntoConstraints = NO;
