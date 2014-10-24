@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97DED2DC19F8BA1600E422BE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DED2DB19F8BA1600E422BE /* CoreLocation.framework */; };
+		97DED2DE19F8BA2400E422BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DED2DD19F8BA2400E422BE /* UIKit.framework */; };
+		97DED2E019F8BA3C00E422BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DED2DF19F8BA3C00E422BE /* Foundation.framework */; };
+		97DED2E219F8BA6000E422BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DED2E119F8BA6000E422BE /* CoreGraphics.framework */; };
+		97DED2E619F94E7300E422BE /* TLTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DED2E519F94E7300E422BE /* TLTrip.m */; };
+		97DED2E919F9656B00E422BE /* NSDate+TripDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DED2E819F9656B00E422BE /* NSDate+TripDate.m */; };
+		97DED2EC19F99F6600E422BE /* TLTripLoggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DED2EB19F99F6600E422BE /* TLTripLoggerViewController.m */; };
+		97DED2EF19F9B07500E422BE /* TLTripTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DED2EE19F9B07500E422BE /* TLTripTableViewCell.m */; };
+		97DED2F219FA047D00E422BE /* UIView+Borders.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DED2F119FA047D00E422BE /* UIView+Borders.m */; };
 		97DF93A819F879DD00258684 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DF93A719F879DD00258684 /* main.m */; };
 		97DF93AB19F879DD00258684 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DF93AA19F879DD00258684 /* AppDelegate.m */; };
-		97DF93AE19F879DD00258684 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DF93AD19F879DD00258684 /* ViewController.m */; };
 		97DF93B119F879DD00258684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97DF93AF19F879DD00258684 /* Main.storyboard */; };
 		97DF93B319F879DD00258684 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97DF93B219F879DD00258684 /* Images.xcassets */; };
 		97DF93B619F879DD00258684 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DF93B419F879DD00258684 /* LaunchScreen.xib */; };
 		97DF93C219F879DE00258684 /* TripLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DF93C119F879DE00258684 /* TripLoggerTests.m */; };
+		97DF93CD19F87BAF00258684 /* TLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DF93CC19F87BAE00258684 /* TLLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +36,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		97DED2DB19F8BA1600E422BE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		97DED2DD19F8BA2400E422BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		97DED2DF19F8BA3C00E422BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		97DED2E119F8BA6000E422BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		97DED2E419F94E7300E422BE /* TLTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTrip.h; sourceTree = "<group>"; };
+		97DED2E519F94E7300E422BE /* TLTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTrip.m; sourceTree = "<group>"; };
+		97DED2E719F9656B00E422BE /* NSDate+TripDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TripDate.h"; sourceTree = "<group>"; };
+		97DED2E819F9656B00E422BE /* NSDate+TripDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TripDate.m"; sourceTree = "<group>"; };
+		97DED2EA19F99F6600E422BE /* TLTripLoggerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTripLoggerViewController.h; sourceTree = "<group>"; };
+		97DED2EB19F99F6600E422BE /* TLTripLoggerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTripLoggerViewController.m; sourceTree = "<group>"; };
+		97DED2ED19F9B07500E422BE /* TLTripTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTripTableViewCell.h; sourceTree = "<group>"; };
+		97DED2EE19F9B07500E422BE /* TLTripTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTripTableViewCell.m; sourceTree = "<group>"; };
+		97DED2F019FA047D00E422BE /* UIView+Borders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Borders.h"; sourceTree = "<group>"; };
+		97DED2F119FA047D00E422BE /* UIView+Borders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Borders.m"; sourceTree = "<group>"; };
 		97DF93A219F879DD00258684 /* TripLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DF93A619F879DD00258684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97DF93A719F879DD00258684 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97DF93A919F879DD00258684 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		97DF93AA19F879DD00258684 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		97DF93AC19F879DD00258684 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		97DF93AD19F879DD00258684 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		97DF93B019F879DD00258684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97DF93B219F879DD00258684 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		97DF93B519F879DD00258684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		97DF93BB19F879DE00258684 /* TripLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DF93C019F879DE00258684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97DF93C119F879DE00258684 /* TripLoggerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripLoggerTests.m; sourceTree = "<group>"; };
+		97DF93CB19F87BAE00258684 /* TLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLocationManager.h; sourceTree = "<group>"; };
+		97DF93CC19F87BAE00258684 /* TLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97DED2E219F8BA6000E422BE /* CoreGraphics.framework in Frameworks */,
+				97DED2E019F8BA3C00E422BE /* Foundation.framework in Frameworks */,
+				97DED2DE19F8BA2400E422BE /* UIKit.framework in Frameworks */,
+				97DED2DC19F8BA1600E422BE /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,11 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97DED2E319F8BD1400E422BE /* Framewaorks */ = {
+			isa = PBXGroup;
+			children = (
+				97DED2E119F8BA6000E422BE /* CoreGraphics.framework */,
+				97DED2DF19F8BA3C00E422BE /* Foundation.framework */,
+				97DED2DD19F8BA2400E422BE /* UIKit.framework */,
+				97DED2DB19F8BA1600E422BE /* CoreLocation.framework */,
+			);
+			name = Framewaorks;
+			sourceTree = "<group>";
+		};
 		97DF939919F879DD00258684 = {
 			isa = PBXGroup;
 			children = (
 				97DF93A419F879DD00258684 /* TripLogger */,
 				97DF93BE19F879DE00258684 /* TripLoggerTests */,
+				97DED2E319F8BD1400E422BE /* Framewaorks */,
 				97DF93A319F879DD00258684 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,12 +120,20 @@
 		97DF93A419F879DD00258684 /* TripLogger */ = {
 			isa = PBXGroup;
 			children = (
-				97DF93A919F879DD00258684 /* AppDelegate.h */,
-				97DF93AA19F879DD00258684 /* AppDelegate.m */,
-				97DF93AC19F879DD00258684 /* ViewController.h */,
-				97DF93AD19F879DD00258684 /* ViewController.m */,
 				97DF93AF19F879DD00258684 /* Main.storyboard */,
 				97DF93B219F879DD00258684 /* Images.xcassets */,
+				97DF93CB19F87BAE00258684 /* TLLocationManager.h */,
+				97DF93CC19F87BAE00258684 /* TLLocationManager.m */,
+				97DED2EA19F99F6600E422BE /* TLTripLoggerViewController.h */,
+				97DED2EB19F99F6600E422BE /* TLTripLoggerViewController.m */,
+				97DED2ED19F9B07500E422BE /* TLTripTableViewCell.h */,
+				97DED2EE19F9B07500E422BE /* TLTripTableViewCell.m */,
+				97DED2E419F94E7300E422BE /* TLTrip.h */,
+				97DED2E519F94E7300E422BE /* TLTrip.m */,
+				97DED2E719F9656B00E422BE /* NSDate+TripDate.h */,
+				97DED2E819F9656B00E422BE /* NSDate+TripDate.m */,
+				97DED2F019FA047D00E422BE /* UIView+Borders.h */,
+				97DED2F119FA047D00E422BE /* UIView+Borders.m */,
 				97DF93B419F879DD00258684 /* LaunchScreen.xib */,
 				97DF93A519F879DD00258684 /* Supporting Files */,
 			);
@@ -96,6 +143,8 @@
 		97DF93A519F879DD00258684 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				97DF93A919F879DD00258684 /* AppDelegate.h */,
+				97DF93AA19F879DD00258684 /* AppDelegate.m */,
 				97DF93A619F879DD00258684 /* Info.plist */,
 				97DF93A719F879DD00258684 /* main.m */,
 			);
@@ -168,6 +217,11 @@
 				TargetAttributes = {
 					97DF93A119F879DD00258684 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					97DF93BA19F879DE00258684 = {
 						CreatedOnToolsVersion = 6.1;
@@ -219,8 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97DF93AE19F879DD00258684 /* ViewController.m in Sources */,
+				97DED2F219FA047D00E422BE /* UIView+Borders.m in Sources */,
 				97DF93AB19F879DD00258684 /* AppDelegate.m in Sources */,
+				97DED2E619F94E7300E422BE /* TLTrip.m in Sources */,
+				97DED2EF19F9B07500E422BE /* TLTripTableViewCell.m in Sources */,
+				97DED2E919F9656B00E422BE /* NSDate+TripDate.m in Sources */,
+				97DED2EC19F99F6600E422BE /* TLTripLoggerViewController.m in Sources */,
+				97DF93CD19F87BAF00258684 /* TLLocationManager.m in Sources */,
 				97DF93A819F879DD00258684 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +402,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TripLogger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +415,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TripLogger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +476,7 @@
 				97DF93C719F879DE00258684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97DF93C819F879DE00258684 /* Build configuration list for PBXNativeTarget "TripLoggerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +485,7 @@
 				97DF93CA19F879DE00258684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
