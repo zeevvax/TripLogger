@@ -34,6 +34,11 @@ static NSString *const TripTableViewCellID = @"TripTableViewCell";
                                                object:nil];
 }
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 
 - (void)setupNavigationBar
 {

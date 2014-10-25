@@ -83,7 +83,7 @@ typedef enum : NSUInteger {
 #pragma mark - trip location helpers
 - (void)updateStatusWithCurrentLocation:(CLLocation *) currentLocation
 {
-//    NSLog(@"updateStatusWithCurrentLocation currentLocation %@ time %@", currentLocation, [NSDate date]);
+//     NSLog(@"updateStatusWithCurrentLocation currentLocation %@ time %@", currentLocation, [NSDate date]);
     if (self.status == TLLocationManagerStatusStop && [self isDrivingWithCurrentLocation:currentLocation])
     {
         self.status = TLLocationManagerStatusDriving;
@@ -153,6 +153,7 @@ typedef enum : NSUInteger {
 
 - (void)addStreetAddressToTrip:(TLTrip *) trip toStartAdderss:(BOOL) startAddress location:(CLLocation *) location
 {
+
     [self.tripGeoCoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error)
     {
         NSLog(@"Found placemarks error: %@", error);
@@ -160,7 +161,8 @@ typedef enum : NSUInteger {
         if (error == nil && [placemarks count] > 0)
         {
             CLPlacemark *placemark = [placemarks lastObject];
-            address = [NSString stringWithFormat:@"%@ %@",
+            if (placemark.thoroughfare)
+                address = [NSString stringWithFormat:@"%@ %@",
                                  placemark.subThoroughfare?placemark.subThoroughfare:@"", placemark.thoroughfare];
             
         }
